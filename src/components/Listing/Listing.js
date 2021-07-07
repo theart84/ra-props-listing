@@ -1,8 +1,9 @@
 import ListingItem from "./ListingItem/ListingItem";
 
-import data from '../../data/data.json';
+import sourceData from '../../data/data.json';
 
 const Listing = () => {
+  const data = sourceData || [];
   return(
     <div className="item-list">
       {data.map(item => <ListingItem
